@@ -50,7 +50,7 @@ include('includes/header.php');
 <nav>
 <ul>
 <?php foreach ($categories as $category) : ?>
-<li><a href=".?category_id=<?php echo $category['categoryID']; ?>">
+<li><a class="btn btn-outline-dark" href=".?category_id=<?php echo $category['categoryID']; ?>">
 <?php echo $category['categoryName']; ?>
 </a>
 </li>
@@ -83,7 +83,7 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
-<input type="submit" value="Delete">
+<input type="submit" class="btn btn-outline-danger" value="Delete">
 </form></td>
 <td><form action="edit_record_form.php" method="post"
 id="delete_record_form">
@@ -91,13 +91,13 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
-<input type="submit" value="Edit">
+<input type="submit" class="btn btn-outline-info" value="Edit">
 </form></td>
 </tr>
 <?php endforeach; ?>
 </table>
-<p><a href="add_record_form.php">Add Record</a></p>
-<p><a href="category_list.php">Manage Categories</a></p>
+<p><a href="add_record_form.php" class="btn btn-primary">Add Record</a></p>
+<p><a href="category_list.php" class="btn btn-info">Manage Categories</a></p>
 </section>
 <?php
 include('includes/footer.php');

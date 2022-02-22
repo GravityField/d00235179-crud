@@ -27,27 +27,27 @@ include('includes/header.php');
             </select>
             <br>
             <label>Name:</label>
-            <input type="input" name="name">
+            <input type="input" class="form-control" name="name" required>
             <br>
 
             <label>List Price:</label>
-            <input type="input" name="price">
+            <input type="input" class="form-control" name="price" required pattern="[0-9]{1-3}.[0-9]{0-2}"   >
             <br>        
             
             <label>Alcohol Content:</label>
-            <input type="input" name="alcohol_content">
+            <input type="input" class="form-control" name="alcohol_content" required pattern="[0-9]{1-2}.[0-9]{0-2}">
             <br> 
 
 
             <label>Image:</label>
-            <input type="file" name="image" accept="image/*" />
+            <input type="file" class="form-control" name="image" accept="image/*" />
             <br>
             
             <label>&nbsp;</label>
-            <input type="submit" value="Add Record">
+            <input type="submit" class="btn btn-primary" value="Add Record">
             <br>
         </form>
-        <p><a href="index.php">View Homepage</a></p>
+        <p><a href="index.php" class="btn btn-danger">Cancel</a></p>
     <?php
 include('includes/footer.php');
 ?>
