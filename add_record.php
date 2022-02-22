@@ -4,10 +4,11 @@
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $name = filter_input(INPUT_POST, 'name');
 $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
+$alcohol_content = filter_input(INPUT_POST, 'alcohol_content', FILTER_VALIDATE_FLOAT);
 
 // Validate inputs
 if ($category_id == null || $category_id == false ||
-    $name == null || $price == null || $price == false ) {
+    $name == null || $price == null || $price == false || $alcohol_content == null || $alcohol_content == false ) {
     $error = "Invalid product data. Check all fields and try again.";
     include('error.php');
     exit();
@@ -63,13 +64,14 @@ if ($category_id == null || $category_id == false ||
 
     // Add the product to the database 
     $query = "INSERT INTO records
-                 (categoryID, name, price, image)
+                 (categoryID, name, price, alcohol_content, image)
               VALUES
-                 (:category_id, :name, :price, :image)";
+                 (:category_id, :name, :price, :alcohol_content, :image)";
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':name', $name);
     $statement->bindValue(':price', $price);
+    $statement->bindValue(':alcohol_content', $alcohol_content);
     $statement->bindValue(':image', $image);
     $statement->execute();
     $statement->closeCursor();

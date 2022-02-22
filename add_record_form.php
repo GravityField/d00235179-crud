@@ -34,6 +34,11 @@ include('includes/header.php');
             <input type="input" name="price">
             <br>        
             
+            <label>Alcohol Content:</label>
+            <input type="input" name="alcohol_content">
+            <br> 
+
+
             <label>Image:</label>
             <input type="file" name="image" accept="image/*" />
             <br>
