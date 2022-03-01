@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=off-license';
+    $dsn = 'mysql:host=localhost;dbname=offlicense';
     $username = 'root';
     $password = '';
 

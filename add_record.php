@@ -8,7 +8,7 @@ $alcohol_content = filter_input(INPUT_POST, 'alcohol_content', FILTER_VALIDATE_F
 
 // Validate inputs
 if ($category_id == null || $category_id == false ||
-    $name == null || $price == null || $price == false || $alcohol_content == null || $alcohol_content == false ) {
+    $name == null || $price == null || $price == false || $alcohol_content == null || $alcohol_content == null ) {
     $error = "Invalid product data. Check all fields and try again.";
     include('error.php');
     exit();
