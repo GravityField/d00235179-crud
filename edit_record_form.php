@@ -38,11 +38,14 @@ include('includes/header.php');
                    value="<?php echo $records['price']; ?>" required pattern="[0-9]{1-3}.[0-9]{0-2}">
             <br>
 
+            <label>Manufacture Date:</label>
+            <input type="date" name="manufacture_date" class="form-control" value="<?php echo $records['manufacture_date']; ?>" required>
+            <br> 
+
             <label>Alcohol Content:</label>
             <input type="input" name="alcohol_content" class="form-control" value="<?php echo $records['alcohol_content']; ?>"
             required pattern="[0-9]{1-2}.[0-9]{0-2}">
             <br> 
-
 
             <label>Image:</label>
             <input type="file" name="image" class="form-control" accept="image/*" />

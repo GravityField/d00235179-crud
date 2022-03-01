@@ -34,10 +34,14 @@ include('includes/header.php');
             <input type="input" class="form-control" name="price" required pattern="[0-9]{1-3}.[0-9]{0-2}"   >
             <br>        
             
+            <label>Manufacture Date:</label>
+            <input type="date" class="form-control" name="manufacture_date" required >
+            <br> 
+            
             <label>Alcohol Content:</label>
             <input type="input" class="form-control" name="alcohol_content" required pattern="[0-9]{1-2}.[0-9]{0-2}">
+            
             <br> 
-
 
             <label>Image:</label>
             <input type="file" class="form-control" name="image" accept="image/*" />

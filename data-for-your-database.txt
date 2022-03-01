@@ -30,6 +30,7 @@ CREATE TABLE `records` (
   `categoryID` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `price` decimal(10,2) NOT NULL,
+  `manufacture_date` DATE NOT NULL,
   `alcohol_content` decimal(10,2) NOT NULL,
   `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -38,19 +39,19 @@ CREATE TABLE `records` (
 -- Dumping data for table `records`
 --
 
-INSERT INTO `records` (`recordID`, `categoryID`, `name`, `price`, `alcohol_content`,`image`) VALUES
-(1, 1, 'Smirnoff', '12.00', '27', 'smirn.jpg'),
-(2, 1, 'Absolut', '15.00', '27.5','absolut.jpg'),
-(3, 1, 'Glen', '18.00', '25','glen.jpg'),
-(4, 1, 'Grey Goose', '10.00', '20','goose.jpg'),
-(5, 2, 'Some text', '16.00', '30','373465.jpg'),
-(6, 2, 'Some text', '19.00', '35','373989.jpg'),
-(7, 2, 'Some text', '12.00', '30','374104.jpg'),
-(8, 2, 'Some text', '10.00', '29','4733.jpg'),
-(9, 2, 'Some text', '15.00', '30','834551.jpg'),
-(10, 3, 'Some text', '13.00', '13','908783.jpg'),
-(11, 3, 'Some text', '17.00', '19','835545.jpg'),
-(12, 3, 'Some text', '19.00', '12','119273.jpg');
+INSERT INTO `records` (`recordID`, `categoryID`, `name`, `price`, `manufacture_date`, `alcohol_content`,`image`) VALUES
+(1, 1, 'Smirnoff', '12.00', '2020-10-20', '27', 'smirn.jpg'),
+(2, 1, 'Absolut', '15.00', '2020-10-20','27.5','absolut.jpg'),
+(3, 1, 'Glen', '18.00', '2020-10-20','25','glen.jpg'),
+(4, 1, 'Grey Goose', '10.00', '2020-10-20','20','goose.jpg'),
+(5, 2, 'Some text', '16.00', '2020-10-20','30','373465.jpg'),
+(6, 2, 'Some text', '19.00', '2020-10-20','35','373989.jpg'),
+(7, 2, 'Some text', '12.00', '2020-10-20','30','374104.jpg'),
+(8, 2, 'Some text', '10.00','2020-10-20', '29','4733.jpg'),
+(9, 2, 'Some text', '15.00', '2020-10-20','30','834551.jpg'),
+(10, 3, 'Some text', '13.00', '2020-10-20','13','908783.jpg'),
+(11, 3, 'Some text', '17.00', '2020-10-20','19','835545.jpg'),
+(12, 3, 'Some text', '19.00', '2020-10-20','12','119273.jpg');
 
 --
 -- Indexes for dumped tables

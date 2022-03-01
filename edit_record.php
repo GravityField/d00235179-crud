@@ -5,12 +5,17 @@ $record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $name = filter_input(INPUT_POST, 'name');
 $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
+
+
+$manufacture_date = filter_input(INPUT_POST, 'manufacture_date');
 $alcohol_content = filter_input(INPUT_POST, 'alcohol_content', FILTER_VALIDATE_FLOAT);
+
 
 // Validate inputs
 if ($record_id == NULL || $record_id == FALSE || $category_id == NULL ||
 $category_id == FALSE || empty($name) || 
-$price == NULL || $price == FALSE || $alcohol_content == null || $alcohol_content == false) {
+$price == NULL || $price == FALSE || $alcohol_content == null || $alcohol_content == false ||
+$manufacture_date == null) {
 $error = "Invalid record data. Check all fields and try again.";
 include('error.php');
 } else {
@@ -53,6 +58,7 @@ $query = 'UPDATE records
 SET categoryID = :category_id,
 name = :name,
 price = :price,
+manufacture_date = :manufacture_date,
 alcohol_content = :alcohol_content,
 image = :image
 WHERE recordID = :record_id';
@@ -60,6 +66,7 @@ $statement = $db->prepare($query);
 $statement->bindValue(':category_id', $category_id);
 $statement->bindValue(':name', $name);
 $statement->bindValue(':price', $price);
+$statement->bindValue(':manufacture_date', $manufacture_date);
 $statement->bindValue(':alcohol_content', $alcohol_content);
 $statement->bindValue(':image', $image);
 $statement->bindValue(':record_id', $record_id);
@@ -70,3 +77,4 @@ $statement->closeCursor();
 include('index.php');
 }
 ?>
+
