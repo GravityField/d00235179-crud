@@ -3,8 +3,12 @@
 -- Table structure for table `categories`
 --  
 
+
+DROP DATABASE if exists offlicense;
+CREATE DATABASE offlicense;
+
 CREATE TABLE `categories` (
-  `categoryID` int(11) NOT NULL,
+  `categoryID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `categoryName` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
