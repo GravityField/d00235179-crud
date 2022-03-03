@@ -48,10 +48,15 @@ include('includes/header.php');
             <br>
             
             <label>&nbsp;</label>
+            <br>
+            <div class="button-container">
             <input type="submit" class="btn btn-primary" value="Add Record">
+            
+            <p><a href="index.php" class="btn btn-danger">Cancel</a></p>
+            </div>
             <br>
         </form>
-        <p><a href="index.php" class="btn btn-danger">Cancel</a></p>
+        
     <?php
 include('includes/footer.php');
 ?>

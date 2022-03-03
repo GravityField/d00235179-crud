@@ -1,0 +1,134 @@
+
+body {
+    background-color: $tone2 !important;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    background-color: $tone2 !important;
+    border-top: 0px;
+    padding: .5em 2em;
+}
+
+
+aside {
+    float: left;
+    width: 150px;
+}
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+nav ul li {
+    padding-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 150%;
+    margin: 0;
+    padding: .5em 0 .25em;
+}
+h2 {
+    font-size: 120%;
+    margin: 0;
+    padding: .25em 0 .5em;
+}
+h1, h2 {
+    color: $tone1;
+}
+ul {
+    margin: 0 0 1em 0;
+    padding: 0 0 0 2.5em;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: rgb(41, 64, 124);
+    font-weight: bold;
+}
+a:hover {
+    color: rgb(208, 133, 4);
+}
+
+
+.products-table
+{
+    width: 1000px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;    
+}
+table {
+    border-collapse: collapse;
+    background-color: $tone2;
+    width: 100%;
+    
+}
+td, th {
+    color: $tone1;
+    padding: .2em .5em .2em .5em;
+    vertical-align: top;
+    text-align: left;
+}
+form {
+    margin: 0;
+}
+br {
+    clear: left;
+}
+.right {
+    text-align: right;
+}
+.last_paragraph {
+	margin-bottom: 2em;	
+}
+.margin_top_increase {
+	margin-top: 1em;	
+}
+
+/* the styles for the html elements */
+
+
+section {
+    float: left;
+    width: 800PX;
+    padding-bottom: 1.5em;
+}
+
+
+/********************************************************************
+* Additional styles for the record Manager application
+********************************************************************/
+#add_record_form {
+    margin: .5em 0 1em;
+}
+#add_record_form label {
+    width: 6em;
+    padding-right: 1em;
+    padding-bottom: .5em;
+    float: left;
+    color: $tone1;
+}
+#add_record_form input {
+    float: left;
+}
+#add_record_form input[text] {
+    width: 15em;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+h2{text-align: center;}
+.button-container input, a
+{
+     margin: 10px;
+}
