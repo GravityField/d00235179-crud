@@ -1,4 +1,4 @@
-![alt text](image_uploads/logo.png "Off License")
+![alt text](image_uploads/logo.png "Off-License")
 
 
 
