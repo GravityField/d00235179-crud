@@ -12,12 +12,14 @@
 * Configure the database.php file to connect to your SQL database
 
 
-* Enjoy
-![alt text](image_uploads/cheers-lets-drink.gif "Off-License")
-
 
 ## Required files:
 [Install XAMPP](https://www.apachefriends.org/index.html "XAMPP")
+
+
+* Enjoy
+
+![alt text](image_uploads/cheers-lets-drink.gif "Off-License")
 
 
 
