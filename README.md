@@ -1,4 +1,4 @@
-![alt text](image_uploads/logo.png "Logo Title Text 1")
+![alt text](image_uploads/logo.png "Off License")
 
 
 
