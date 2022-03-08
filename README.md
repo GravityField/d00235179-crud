@@ -1,5 +1,8 @@
-# Off-license
-A starter project for DkIT students on the Server-Side module.
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+
+
+An Off-license website for DKIT students
 ### Instructions
 * Install XAMPP
 * Open XAMPP control panel and start MySQL and Apache
