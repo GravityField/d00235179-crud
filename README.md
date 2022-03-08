@@ -10,8 +10,13 @@
 * Run the code in the data-for-your-database.txt file in PHP MyAdmin
 * Move the PHP files in to your htdocs folder inside the XAMPP folder so Apache can process the PHP code
 * Configure the database.php file to connect to your SQL database
-* Enjoy
 
+
+* Enjoy
+![alt text](image_uploads/cheers-lets-drink.gif "Off-License")
+
+
+## Required files:
 [Install XAMPP](https://www.apachefriends.org/index.html "XAMPP")
 
 
