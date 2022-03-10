@@ -18,6 +18,7 @@ if ($name == null) {
     $statement->closeCursor();
 
     // Display the Category List page
+    header("Location:category_list.php");
     include('category_list.php');
 }
 ?>
