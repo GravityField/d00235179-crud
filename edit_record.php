@@ -73,6 +73,7 @@ $statement->execute();
 $statement->closeCursor();
 
 // Display the Product List page
+header("Location:index.php");
 include('index.php');
 }
 ?>
