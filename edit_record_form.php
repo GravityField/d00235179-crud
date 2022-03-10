@@ -9,7 +9,17 @@ $statement = $db->prepare($query);
 $statement->bindValue(':record_id', $record_id);
 $statement->execute();
 $records = $statement->fetch(PDO::FETCH_ASSOC);
+
 $statement->closeCursor();
+
+$query2 = 'SELECT *
+          FROM categories
+          ORDER BY categoryID';
+$statement2 = $db->prepare($query2);
+$statement2->execute();
+$categories = $statement2->fetchAll();
+$statement2->closeCursor();
+
 ?>
 <!-- the head section -->
  <div class="container">
@@ -23,9 +33,14 @@ include('includes/header.php');
             <input type="hidden" name="record_id" class="form-control"
                    value="<?php echo $records['recordID']; ?>">
 
-            <label>Category ID:</label>
-            <input type="category_id" name="category_id" class="form-control"
-                   value="<?php echo $records['categoryID']; ?>">
+                   <label>Category:</label>
+            <select name="category_id">
+            <?php foreach ($categories as $category) : ?>
+                <option value="<?php echo $category['categoryID']; ?>">
+                    <?php echo $category['categoryName']; ?>
+                </option>
+            <?php endforeach; ?>
+            </select>
             <br>
 
             <label>Name:</label>
@@ -55,10 +70,15 @@ include('includes/header.php');
             <?php } ?>
             
             <label>&nbsp;</label>
-            <input type="submit" class="btn btn-success" value="Save Changes">
+            <br>
+            <div class="button-container">
+            <input type="submit" class="btn btn-primary" value="Save Changes">
+
+            <p><a href="index.php" class="btn btn-danger">Cancel</a></p>
+            </div>
             <br>
         </form>
-        <p><a href="index.php" class="btn btn-danger">Cancel</a></p>
+        
     <?php
 include('includes/footer.php');
 ?>

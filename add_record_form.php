@@ -27,11 +27,11 @@ include('includes/header.php');
             </select>
             <br>
             <label>Name:</label>
-            <input type="input" class="form-control" name="name" required>
+            <input type="input" class="form-control" name="name" placeholder="e.g Smirnoff Ice" required>
             <br>
 
             <label>List Price:</label>
-            <input type="input" class="form-control" name="price" required pattern="[0-9]{1-3}.[0-9]{0-2}"   >
+            <input type="input" class="form-control" name="price" placeholder="e.g 20.50" required pattern="[0-9]{1-3}.[0-9]{0-2}"   >
             <br>        
             
             <label>Manufacture Date:</label>
@@ -39,13 +39,12 @@ include('includes/header.php');
             <br> 
             
             <label>Alcohol Content:</label>
-            <input type="input" class="form-control" name="alcohol_content" required pattern="[0-9]{1-2}.[0-9]{0-2}">
+            <input type="input" class="form-control" name="alcohol_content" placeholder="e.g 30.50" required pattern="[0-9]{1-2}.[0-9]{0-2}">
             
             <br> 
 
             <label>Image:</label>
             <input type="file" class="form-control" name="image" accept="image/*" />
-            <br>
             
             <label>&nbsp;</label>
             <br>
