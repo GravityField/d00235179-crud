@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
-
-<!-- the head section -->
+    
 <head>
     <title>Off License</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/mainStyle.css">
 </head>
 
-<!-- the body section -->
 <body>
     <header><h1>Off License</h1></header>
 
     <main>
-        <h2 class="top">Error</h2>
-        <p><?php echo $error; ?></p>
+        
+        <h2>Error</h2>
+        <h2><?php echo $error; ?></h2>
     </main>
 
     <footer>
