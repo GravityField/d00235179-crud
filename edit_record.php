@@ -13,7 +13,7 @@ $alcohol_content = filter_input(INPUT_POST, 'alcohol_content', FILTER_VALIDATE_F
 
 // Validate inputs
 if ($record_id == NULL || $record_id == FALSE || $category_id == NULL ||
-$category_id == FALSE || empty($name) ||
+$category_id == FALSE || empty($name) || $price == FALSE || $alcohol_content == FALSE ||
 $manufacture_date == null) {
 $error = "Invalid record data. Check all fields and try again.";
 include('error.php');
