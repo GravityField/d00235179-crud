@@ -3,6 +3,10 @@
 
 
 # An Off-license website for DKIT students
+
+[You can see the application running here](https://mysql06.comp.dkit.ie/D00235179/CRUD "OH CRUD")
+
+
 ### Instructions for use
 * Install XAMPP
 * Open XAMPP control panel and start MySQL and Apache
